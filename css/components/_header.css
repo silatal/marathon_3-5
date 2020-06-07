@@ -1,8 +1,31 @@
-.header__container
-{justify-content: space-between;}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
 
-.menu-left__item
-{
-font-size: 18px;
-line-height: 21px;
+.header__container {
+    justify-content: space-between;
+}
+
+.header__menu-left,
+.header__menu-right {
+    display: flex;
+    align-items: center;
+
+}
+
+.menu-left__item {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.logo {
+    font-family: SFProDisplay-Black;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1px;
+    letter-spacing: 0.01em;
 }
