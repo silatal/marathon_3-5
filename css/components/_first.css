@@ -49,7 +49,7 @@
     letter-spacing: 0.05em;
 }
 
-.label-address {
+.first__forma_label {
     display: block;
     padding-top: 15px;
     padding-left: 60px;
@@ -62,9 +62,12 @@
     border-radius: 10px;
     margin-top: 16px;
     margin-left: 48px;
+    max-width: 1074px;
+    width: 100%;
+    justify-content: space-between;
 }
 
-#input-address {
+.first__forma_input {
     margin-left: 60px;
     border: none;
     background: transparent;
@@ -74,7 +77,7 @@
     padding-bottom: 15px;
 }
 
-#input-address::placeholder {
+.first__forma_input::placeholder {
     font-family: SFProText;
     font-size: 16px;
     font-weight: 700;
@@ -82,11 +85,11 @@
     color: #FFFFFF;
 }
 
-/*#input-address::-webkit-input-placeholder {
+/*.first__forma_input::-webkit-input-placeholder {
     color: #FFF;
 }
 
- #input-address:focus::-webkit-input-placeholder {
+ .first__forma_input:focus::-webkit-input-placeholder {
     color: blue
 } */
 
@@ -96,3 +99,32 @@
     left: 5%;
     top: 45%;
 }
+
+.icon_check-in::after {
+    content: url(/img/check-in.png);
+    position: absolute;
+    left: 23%;
+    top: 45%;
+}
+
+.icon_person::after {
+    content: url(/img/person.png);
+    position: absolute;
+    left: 62%;
+    top: 45%;
+}
+
+.block_check-in {
+    border-left: 1px solid #E7E7F2;
+    border-right: 1px solid #E7E7F2;
+}
+.block_guests
+{
+    border-left: 1px solid #E7E7F2;
+}
+/* .block_address,
+.input-address
+{    
+width: 100%;
+max-width: 463px;
+} */

@@ -38,15 +38,29 @@
             <form action="https://jsonplaceholder.typicode.com/posts" class="first__forma">
               <p class="first__forma-tittle">Book your vacation</p>
               <div class="first__forma-content flex">
-                <div>
-                  <div id="form_icons" class="icon_home"></div>
-                <label for="input-address" class="label-address">Accommodation</label>
-                <input type="text" class="" id="input-address" placeholder="6730 Luna Land North Rhiannonmouth"
-                  autocomplete="off">
+                <div class="block_address">
+                  <div class="icon_home icon_form"></div>
+                  <label for="input-address" class="label-address first__forma_label">Accommodation</label>
+                  <input type="text" class="input-address first__forma_input"
+                    placeholder="6730 Luna Land North Rhiannonmouth" autocomplete="off">
                 </div>
-
-                
-
+                <div class="block_check-in">
+                  <div class="icon_check-in icon_form"></div>
+                  <label for="input-check-in" class="label-check-in first__forma_label">Check-in</label>
+                  <input type="text" class="input-check-in first__forma_input" placeholder="19.06.2019"
+                    autocomplete="off">
+                </div>
+                <div class="block_check-out">
+                  <label for="input-check-out" class="label-check-out first__forma_label">Check-out</label>
+                  <input type="text" class="input-check-out first__forma_input" placeholder="19.06.2019"
+                    autocomplete="off">
+                </div>
+                <div class="block_guests">
+                  <div class="icon_person icon_form"></div>
+                  <label for="input-guests" class="label-guests first__forma_label">Guests</label>
+                  <input type="text" class="input-guests first__forma_input"
+                    placeholder="4 adults" autocomplete="off">
+                </div>
               </div>
             </form>
           </div>
