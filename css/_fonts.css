@@ -1,17 +1,17 @@
 @font-face {
-	font-family: 'SFProDisplay-Black';
-	src: url('../fonts/SFProDisplay-Black.ttf') format('ttf'),
-		url('../fonts/SFProDisplay-Black.ttf') format('ttf');
+	font-family: 'SFProDisplay-Bold';
+	src: url('../fonts/SFProDisplay-Bold.woff2') format('woff2'),
+		url('../fonts/SFProDisplay-Bold.woff') format('woff');
 	font-display: swap;
-	font-weight: 500;
+	font-weight: 900;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'SFProText';
-	src: url('../fonts/SFProText-Regular.ttf') format('ttf'),
-		url('../fonts/SFProText-Regular.ttf') format('ttf');
+	src: url('../fonts/SFProText-Regular.woff2') format('woff2'),
+		url('../fonts/SFProText-Regular.woff') format('woff');
 	font-display: swap;
-	font-weight: 500;
+	font-weight: 400;
 	font-style: normal;
 }

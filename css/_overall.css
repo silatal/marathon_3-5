@@ -8,7 +8,12 @@
 	overflow: hidden;
 }
 
-.flex
-{
+.flex {
 	display: flex;
+}
+
+.btn_reset {
+	border: none;
+	background: transparent;
+	cursor: pointer;
 }
