@@ -231,7 +231,6 @@
     overflow: hidden;
     max-width: 570px;
     width: 100%;
-    z-index: 100;
 }
 
 .swiper-container {
