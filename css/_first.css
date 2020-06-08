@@ -1,7 +1,7 @@
 .first {
     height: 100vh;
     min-height: 600px;
-    background-image: url(/img/first-lg.jpg);
+    background-image: url(../img/first-lg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -72,11 +72,12 @@
     align-items: center;
     border: 1px solid #E7E7F2;
 }
-.first__block_button
-{
-    display:flex;
+
+.first__block_button {
+    display: flex;
     width: 30%;
 }
+
 .first__forma-overlay {
     position: absolute;
     top: 0;
@@ -98,6 +99,12 @@
     z-index: 3;
 }
 
+.block_address {
+    background-image: url(../img/house.png);
+    background-position: 19.5px;
+    background-repeat: no-repeat;
+}
+
 .first__forma_input::placeholder {
     font-family: SFProText;
     font-size: 16px;
@@ -106,38 +113,15 @@
     color: #FFFFFF;
 }
 
-.icon_home::before {
-    content: url(/img/house.png);
-    position: absolute;
-    left: 4.5%;
-    top: 47%;
-    cursor: pointer;
-}
-
 .icon_home::after {
-    content: url(/img/arrow-top.png);
+    content: url(../img/arrow-top.png);
     position: absolute;
     left: 33%;
     top: 47%;
 }
 
-.icon_check-in::after {
-    content: url(/img/check-in.png);
-    position: absolute;
-    left: 37%;
-    top: 47%;
-}
-
-.icon_person::before {
-    content: url(/img/person.png);
-    position: absolute;
-    left: 60.8%;
-    top: 47%;
-    cursor: pointer;
-}
-
 .icon_person::after {
-    content: url(/img/arrow-top.png);
+    content: url(../img/arrow-top.png);
     position: absolute;
     left: 75.5%;
     top: 47%;
@@ -152,42 +136,49 @@
     border-left: 1px solid #E7E7F2;
 }
 
+.input-guests,
+.input-address {
+    background-image: url(../img/arrow-top.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+
 .block_address {
     width: 100%;
     max-width: 450px;
 }
 
 .input-address {
-    width: 70%;
+    width: 84%;
 }
 
 .label-check-out,
-.input-check-out
-{
+.input-check-out {
     padding-left: 5px;
     margin-left: 15px;
 }
-.label-guests
-{
-    padding-left: 40px;
-}
-.input-guests
-{
-    margin-left: 40px;
-}
+
 .block_check-in {
     width: 100%;
     max-width: 191px;
+    background-image: url(../img/check-in.png);
+    background-position: 19.5px;
+    background-repeat: no-repeat;
 }
 
 .block_guests {
     width: 100%;
-    max-width:266px;
+    max-width: 266px;
+    background-image: url(../img/person.png);
+    background-position: 19.5px;
+    background-repeat: no-repeat;
 }
 
 .block_check-out {
     width: 100%;
     max-width: 151px;
+
 }
 
 .first__forma_button {
@@ -196,7 +187,7 @@
     top: 55%;
     transform: translateY(-55%);
     width: 100%;
-    max-width:240px;
+    max-width: 240px;
     height: 72px;
     background: #91CB82;
     border-radius: 10px;
@@ -244,7 +235,7 @@
 .swiper-slide__media {
     width: 100%;
     max-width: 270px;
-    background-image: url(/img/ridley.jpg);
+    background-image: url(../img/ridley.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

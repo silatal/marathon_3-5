@@ -10,6 +10,13 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 45px;
+    border-bottom: solid 1px #E7E7F2;
+    opacity: 0.4;
+    padding-bottom: 29px;
+}
+.header__container::after {
+    backdrop-filter: blur(60px);
+    transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
 .header__menu {
@@ -69,7 +76,7 @@
 }
 
 .header__search {
-    background-image: url('/img/search.png');
+    background-image: url('../img/search.png');
     width: 20.31px;
     height: 20.31px;
 }

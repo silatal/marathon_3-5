@@ -3,8 +3,8 @@
 @import "_vendor.css";
 @import "_global.css";
 @import "_overall.css";
-@import "./components/_header.css";
-@import "./components/_first.css";
+@import "_header.css";
+@import "_first.css";
 @import "_media.css";
-@import "./components/_mobile_menu.css";
+@import "_mobile_menu.css";
 /* components imports */
