@@ -82,7 +82,7 @@
     height: 24px;
     width: 70px;
     margin-right: 5px;
-    background: url('../img/search.png') 0 no-repeat;
+    background: transparent;
     background-position-x: right;
     cursor: pointer;
 }

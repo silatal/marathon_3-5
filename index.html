@@ -29,6 +29,7 @@
         </div>
       </div>
     </header>
+
     <main class="main">
       <section class="first">
         <div class="container first_container">
@@ -36,39 +37,39 @@
           <p class="first__text">Plan your vacation on the most beatiful
             places of England</p>
           <div class="first__bottom">
-            <form action="https://jsonplaceholder.typicode.com/posts" class="first__forma">
+            <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="first__forma">
               <p class="first__forma-tittle">Book your vacation</p>
               <div class="first__forma-content flex">
-                <div class="rrr"></div>
+                <div class="first__forma-overlay"></div>
                 <div class="block_address">
                   <div class="icon_home icon_form"></div>
                   <label for="input-address" class="label-address first__forma_label">Accommodation</label>
-                  <input type="text" class="input-address first__forma_input"
-                    placeholder="6730 Luna Land North Rhiannonmouth" autocomplete="off">
+                  <input type="text" class="input-address first__forma_input" name="address"
+                    placeholder="6730 Luna Land North Rhiannonmouth" id="input-address" autocomplete="off">
                 </div>
                 <div class="block_check-in">
                   <div class="icon_check-in icon_form"></div>
                   <label for="input-check-in" class="label-check-in first__forma_label">Check-in</label>
-                  <input type="date" class="input-check-in first__forma_input" placeholder="19.06.2019"
-                    autocomplete="off">
+                  <input type="text" class="input-check-in first__forma_input" name="input-check-in" id="input-check-in"
+                    placeholder="19.06.2019" autocomplete="off">
                 </div>
                 <div class="block_check-out">
                   <label for="input-check-out" class="label-check-out first__forma_label">Check-out</label>
-                  <input type="date" class="input-check-out first__forma_input" placeholder="19.06.2019"
-                    autocomplete="off">
+                  <input type="text" class="input-check-out first__forma_input" name="input-check-out" id="input-check-out"
+                    placeholder="19.06.2019" autocomplete="off">
                 </div>
                 <div class="block_guests">
                   <div class="icon_person icon_form"></div>
                   <label for="input-guests" class="label-guests first__forma_label">Guests</label>
-                  <input type="number" class="input-guests first__forma_input" id="input-guests" placeholder="4 adults" autocomplete="off">
+                  <input type="text" class="input-guests first__forma_input" id="input-guests" name="input-guests" placeholder="4 adults"
+                    autocomplete="off">
                 </div>
               </div>
-                <button class="first__forma_button btn_reset" type="submit">Search</button>
-
+              <button class="first__forma_button btn_reset" type="submit">Search</button>
             </form>
-
           </div>
         </div>
+
         <div class="first__slider main_slider">
           <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -76,15 +77,14 @@
                 <div class="main-slider__text">
                   <p class="main-slider__tittle">Up next</p>
                   <p class="main-slider__content">Aerial View of Rock Cliffs</p>
-                  <a href="#" class="main-slider__link"><img src="/img/arrow-left.png" alt="arrow-left" class="img_arrow-left"></a>
+                  <a href="#" class="main-slider__link"><img src="/img/arrow-left.png" alt="arrow-left"
+                      class="img_arrow-left"></a>
                 </div>
                 <div class="swiper-slide__media">
-                  <!-- <img src="/img/ridley.jpg" alt="ridley" class="img_slide"> -->
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </section>
     </main>

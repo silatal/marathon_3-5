@@ -77,7 +77,7 @@
     display:flex;
     width: 30%;
 }
-.rrr {
+.first__forma-overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -111,6 +111,7 @@
     position: absolute;
     left: 4.5%;
     top: 47%;
+    cursor: pointer;
 }
 
 .icon_home::after {
@@ -132,6 +133,7 @@
     position: absolute;
     left: 60.8%;
     top: 47%;
+    cursor: pointer;
 }
 
 .icon_person::after {
