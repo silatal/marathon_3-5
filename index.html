@@ -14,23 +14,24 @@
   <div class="site-container">
     <header class="header">
       <div class="container header__container flex">
-        <ul class="header__menu-left">
-          <li class="menu-left__item"><a href="#" class="menu-left__link">About</a></li>
-          <li class="menu-left__item"><a href="#" class="menu-left__link">Contact</a></li>
+        <ul class="header__menu-left header__menu">
+          <li class="menu-left__item"><a href="#" class="menu-left__link menu__link">About</a></li>
+          <li class="menu-left__item"><a href="#" class="menu-left__link menu__link">Contact</a></li>
         </ul>
         <a href="#" class="header__logo logo">Camping.</a>
         <div class="header__right flex">
-          <ul class="header__menu-right">
-            <li class="menu-right__item"><a href="#" class="menu-right__link">Sign In</a></li>
-            <li class="menu-right__item"><a href="#" class="menu-right__link">Sign Up</a></li>
+          <ul class="header__menu-right header__menu">
+            <li class="menu-right__item"><a href="#" class="menu-right__link menu__link">Sign In</a></li>
+            <li class="menu-right__item"><a href="#" class="menu-right__link menu__link">Sign Up</a></li>
           </ul>
-          <button class="header__search search btn_reset" type="button"></button>
+          <input class="header-input__search search" type="search">
+          <a href="#" class="icon-search"><img src="img/search.png" alt="search"></a>
         </div>
       </div>
     </header>
     <main class="main">
       <section class="first">
-        <div class="container">
+        <div class="container first_container">
           <h1 class="first__tittle">Beatiful Places of England</h1>
           <p class="first__text">Plan your vacation on the most beatiful
             places of England</p>
@@ -48,42 +49,42 @@
                 <div class="block_check-in">
                   <div class="icon_check-in icon_form"></div>
                   <label for="input-check-in" class="label-check-in first__forma_label">Check-in</label>
-                  <input type="text" class="input-check-in first__forma_input" placeholder="19.06.2019"
+                  <input type="date" class="input-check-in first__forma_input" placeholder="19.06.2019"
                     autocomplete="off">
                 </div>
                 <div class="block_check-out">
                   <label for="input-check-out" class="label-check-out first__forma_label">Check-out</label>
-                  <input type="text" class="input-check-out first__forma_input" placeholder="19.06.2019"
+                  <input type="date" class="input-check-out first__forma_input" placeholder="19.06.2019"
                     autocomplete="off">
                 </div>
                 <div class="block_guests">
                   <div class="icon_person icon_form"></div>
                   <label for="input-guests" class="label-guests first__forma_label">Guests</label>
-                  <input type="text" class="input-guests first__forma_input" placeholder="4 adults" autocomplete="off">
+                  <input type="number" class="input-guests first__forma_input" id="input-guests" placeholder="4 adults" autocomplete="off">
                 </div>
-
-                <button class="first__forma_button btn_reset" type="submit" arial-label="search">Search</button>
               </div>
+                <button class="first__forma_button btn_reset" type="submit">Search</button>
+
             </form>
 
           </div>
-          <div class="first__slider main_slider">
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swipper-slide">
-                  <div class="main-slider__text">
-                    <p class="main-slider__tittle">Up next</p>
-                    <p class="main-slider__content">Aerial View of Rock Cliffs</p>
-                    <img src="/img/arrow-left.png" alt="arrow-left" class="img_arrow-left">
-                  </div>
-                  <div class="swiper-slide__media">
-                    <img src="/img/ridley.jpg" alt="ridley" class="img_slide">
-                  </div>
+        </div>
+        <div class="first__slider main_slider">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swipper-slide">
+                <div class="main-slider__text">
+                  <p class="main-slider__tittle">Up next</p>
+                  <p class="main-slider__content">Aerial View of Rock Cliffs</p>
+                  <a href="#" class="main-slider__link"><img src="/img/arrow-left.png" alt="arrow-left" class="img_arrow-left"></a>
+                </div>
+                <div class="swiper-slide__media">
+                  <!-- <img src="/img/ridley.jpg" alt="ridley" class="img_slide"> -->
                 </div>
               </div>
             </div>
-
           </div>
+
         </div>
       </section>
     </main>

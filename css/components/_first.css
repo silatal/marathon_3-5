@@ -5,7 +5,12 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 350px;
+}
+
+.first_container {
+    position: relative;
+    padding-top: 360px;
+    height: 100%
 }
 
 .first__tittle {
@@ -17,13 +22,12 @@
 }
 
 .first__text {
-    font-family: SF Pro Text;
+    font-family: 'SFProText';
     font-size: 28px;
     line-height: 150%;
     opacity: 0.8;
-    padding-top: 40px;
-    max-width: 35%;
-    letter-spacing: 0.05em;
+    padding-top: 35px;
+    max-width: 42%;
 }
 
 /* forma */
@@ -41,7 +45,7 @@
 
 .first__forma-tittle {
     position: relative;
-    font-family: SF Pro Text;
+    font-family: 'SFProText';
     font-size: 18px;
     line-height: 21px;
     font-weight: 700;
@@ -58,17 +62,21 @@
 }
 
 .first__forma-content {
-
     box-sizing: border-box;
     border-radius: 10px;
     margin-top: 16px;
     margin-left: 48px;
     max-width: 1350px;
-    width: 100%;
+    width: 75%;
     justify-content: space-between;
+    align-items: center;
     border: 1px solid #E7E7F2;
 }
-
+.first__block_button
+{
+    display:flex;
+    width: 30%;
+}
 .rrr {
     position: absolute;
     top: 0;
@@ -98,32 +106,39 @@
     color: #FFFFFF;
 }
 
-.icon_home::after {
+.icon_home::before {
     content: url(/img/house.png);
     position: absolute;
-    left: 5%;
-    top: 45%;
+    left: 4.5%;
+    top: 47%;
+}
+
+.icon_home::after {
+    content: url(/img/arrow-top.png);
+    position: absolute;
+    left: 33%;
+    top: 47%;
 }
 
 .icon_check-in::after {
     content: url(/img/check-in.png);
     position: absolute;
-    left: 23%;
-    top: 45%;
+    left: 37%;
+    top: 47%;
 }
 
 .icon_person::before {
     content: url(/img/person.png);
     position: absolute;
-    left: 62%;
-    top: 45%;
+    left: 60.8%;
+    top: 47%;
 }
 
 .icon_person::after {
     content: url(/img/arrow-top.png);
     position: absolute;
-    left: 72%;
-    top: 45%;
+    left: 75.5%;
+    top: 47%;
 }
 
 .block_check-in {
@@ -135,23 +150,66 @@
     border-left: 1px solid #E7E7F2;
 }
 
-/* .block_address,
-.input-address
-{    
-width: 100%;
-max-width: 463px;
-} */
+.block_address {
+    width: 100%;
+    max-width: 450px;
+}
+
+.input-address {
+    width: 70%;
+}
+
+.label-check-out,
+.input-check-out
+{
+    padding-left: 5px;
+    margin-left: 15px;
+}
+.label-guests
+{
+    padding-left: 40px;
+}
+.input-guests
+{
+    margin-left: 40px;
+}
+.block_check-in {
+    width: 100%;
+    max-width: 191px;
+}
+
+.block_guests {
+    width: 100%;
+    max-width:266px;
+}
+
+.block_check-out {
+    width: 100%;
+    max-width: 151px;
+}
 
 .first__forma_button {
-    width: 240px;
+    position: absolute;
+    right: 47px;
+    top: 55%;
+    transform: translateY(-55%);
+    width: 100%;
+    max-width:240px;
     height: 72px;
     background: #91CB82;
     border-radius: 10px;
     font-size: 18px;
     line-height: 20px;
     color: #fff;
-    position: relative;
     z-index: 3;
+    transition: 1s;
+}
+
+.first__forma_button:hover {
+    color: #91CB82;
+    background-color: #fff;
+    border: 2px solid #91CB82;
+    transition: 1s;
 }
 
 .main-slider__text {
@@ -165,7 +223,7 @@ max-width: 463px;
 .first__slider {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-56%);
     right: 0;
     display: flex;
     overflow: hidden;
@@ -183,8 +241,12 @@ max-width: 463px;
 }
 
 .swiper-slide__media {
-    height: 100%;
-    max-height: 400px;
+    width: 100%;
+    max-width: 270px;
+    background-image: url(/img/ridley.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .main-slider__tittle {
@@ -211,4 +273,10 @@ max-width: 463px;
     bottom: 0;
     padding-left: 36px;
     padding-bottom: 48px;
+    transition: 1s;
+}
+
+.main-slider__link:hover>.img_arrow-left {
+    transition: 1s;
+    width: 85px;
 }

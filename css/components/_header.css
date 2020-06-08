@@ -12,11 +12,17 @@
     padding-top: 45px;
 }
 
-.header__menu-left,
-.header__menu-right {
+.header__menu {
     display: flex;
     align-items: center;
-    margin-right: 95px;
+}
+
+.header__menu-left {
+    margin-right: 100px
+}
+
+.header__menu-right {
+    margin-right: 15px;
 }
 
 .menu-left__item {
@@ -32,6 +38,28 @@
     margin-right: 60px;
 }
 
+.menu-left__link,
+.menu-right__link {
+    position: relative;
+}
+
+.menu__link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 19px;
+    height: 4px;
+    width: 0%;
+    background-color: #fff;
+    transition: width 1s;
+}
+
+.menu__link:hover:after,
+.menu__link:focus:after {
+    width: 100%;
+    transition: width 1s;
+}
+
 .logo {
     font-family: SFProDisplay-Bold;
     font-size: 24px;
@@ -44,4 +72,21 @@
     background-image: url('/img/search.png');
     width: 20.31px;
     height: 20.31px;
+}
+
+.header-input__search {
+    border: 0px solid #cccccc;
+    border-radius: 3px;
+    color: #ffffff;
+    outline: none;
+    height: 24px;
+    width: 70px;
+    margin-right: 5px;
+    background: url('../img/search.png') 0 no-repeat;
+    background-position-x: right;
+    cursor: pointer;
+}
+
+.header-input__search:hover {
+    border: 1px solid #fff;
 }
